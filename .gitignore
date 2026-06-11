@@ -1,0 +1,6 @@
+# .gitignore
+.env
+gcp_credentials/*.json
+__pycache__/
+*.pyc
+.mage_env
