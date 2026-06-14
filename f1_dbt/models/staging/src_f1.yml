@@ -1,0 +1,11 @@
+# models/staging/src_f1.yml
+version: 2
+
+sources:
+  - name: f1_raw
+    description: "Datos crudos e históricos de Fórmula 1 ingeridos desde la API de OpenF1"
+    database: f1-telemetry-pipeline-499103
+    schema: f1_raw
+    tables:
+      - name: ext_sessions
+        description: "Tabla externa que lee los Parquet de telemetría y sesiones desde GCS"

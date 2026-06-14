@@ -10,4 +10,5 @@ services:
       USER_CODE_PATH: /home/src/f1_pipeline
       # Google Application Credentials (las usaremos en el siguiente paso)
       GOOGLE_APPLICATION_CREDENTIALS: /home/src/gcp_credentials/mage-service-account.json
+      REQUIRE_USER_AUTHENTICATION: "0"
     restart: always

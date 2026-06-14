@@ -1,6 +1,32 @@
-# .gitignore
+# ==========================================
+# 1. Credenciales y Seguridad Cloud (CRÍTICO)
+# ==========================================
+# Bloquea cualquier archivo JSON de llaves en cualquier nivel de carpetas
+*.json
+*-keys.json
+gcp_credentials/
+
+# Bloquea variables de entorno locales de Docker o sistemas
 .env
-gcp_credentials/*.json
+
+# ==========================================
+# 2. Entornos Virtuales y Python
+# ==========================================
+# Evita subir los gigabytes de librerías instaladas en tu entorno de dbt
+dbt-env/
+venv/
+.venv/
+env/
 __pycache__/
 *.pyc
-.mage_env
+
+# ==========================================
+# 3. Archivos Temporales de dbt y Mage
+# ==========================================
+# dbt genera estos directorios dinámicamente al compilar y correr (dbt run/test)
+f1_dbt/target/
+f1_dbt/dbt_packages/
+f1_dbt/logs/
+
+# Archivos de estado interno de Mage.ai que no aportan al repositorio
+.mage_stats.json

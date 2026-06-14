@@ -1,0 +1,63 @@
+[0m23:30:45.024984 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x712c52e90ef0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x712c54995c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x712c53ace9c0>]}
+
+
+============================== 23:30:45.027462 | fe16e69c-2768-447b-bacc-573ab7935efa ==============================
+[0m23:30:45.027462 [info ] [MainThread]: Running with dbt=1.11.11
+[0m23:30:45.027925 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/home/nicotherev/.dbt', 'target_path': 'None', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'log_format': 'default', 'indirect_selection': 'eager', 'static_parser': 'True', 'introspect': 'True', 'printer_width': '80', 'partial_parse': 'True', 'debug': 'False', 'no_print': 'None', 'use_colors': 'True', 'log_path': 'logs', 'invocation_command': 'dbt init f1_dbt', 'warn_error': 'None', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'empty': 'None', 'quiet': 'False', 'use_experimental_parser': 'False', 'version_check': 'True', 'log_cache_events': 'False', 'fail_fast': 'False'}
+[0m23:30:45.034360 [info ] [MainThread]: Creating dbt configuration folder at /home/nicotherev/.dbt
+[0m23:30:45.035722 [debug] [MainThread]: Starter project path: /home/nicotherev/Proyectos/f1-telemetry-pipeline/dbt-env/lib/python3.12/site-packages/dbt/include/starter_project
+[0m23:30:45.041038 [info ] [MainThread]: 
+Your new dbt project "f1_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m23:30:45.041379 [info ] [MainThread]: Setting up your profile.
+[0m23:32:36.458191 [info ] [MainThread]: Profile f1_dbt written to /home/nicotherev/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m23:32:36.460186 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 120.723885, "process_in_blocks": "40", "process_kernel_time": 0.294803, "process_mem_max_rss": "216888", "process_out_blocks": "80", "process_user_time": 2.166505}
+[0m23:32:36.461420 [debug] [MainThread]: Command `dbt init` succeeded at 23:32:36.461332 after 120.73 seconds
+[0m23:32:36.461960 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x712c528783b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x712c23ba0c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x712c29776120>]}
+[0m23:32:36.462437 [debug] [MainThread]: Flushing usage events
+[0m23:32:37.071397 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:34:27.972846 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75ae15159430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75ae1428d520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75ae170f5010>]}
+
+
+============================== 23:34:27.976560 | b13e56a2-dd40-421a-91be-11203de991bc ==============================
+[0m23:34:27.976560 [info ] [MainThread]: Running with dbt=1.11.11
+[0m23:34:27.977005 [debug] [MainThread]: running dbt with arguments {'warn_error': 'None', 'printer_width': '80', 'target_path': 'None', 'log_format': 'default', 'log_cache_events': 'False', 'static_parser': 'True', 'invocation_command': 'dbt docs generate', 'use_experimental_parser': 'False', 'profiles_dir': '/home/nicotherev/.dbt', 'use_colors': 'True', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'introspect': 'True', 'version_check': 'True', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'partial_parse': 'True', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'cache_selected_only': 'False', 'no_print': 'None', 'quiet': 'False'}
+[0m23:34:27.977370 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/nicotherev/Proyectos/f1-telemetry-pipeline/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m23:34:27.978511 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": false, "command_wall_clock_time": 0.05438733, "process_in_blocks": "64464", "process_kernel_time": 0.19399, "process_mem_max_rss": "103732", "process_out_blocks": "16", "process_user_time": 0.991915}
+[0m23:34:27.979006 [debug] [MainThread]: Command `dbt docs generate` failed at 23:34:27.978922 after 0.06 seconds
+[0m23:34:27.979333 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75ae1427fce0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75ae1428d520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75ae14429520>]}
+[0m23:34:27.979659 [debug] [MainThread]: Flushing usage events
+[0m23:34:28.579515 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:34:36.262484 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77cae54646e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77cae5e5da00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77cae41c2840>]}
+
+
+============================== 23:34:36.264816 | d1694c30-e741-4286-bcd8-81eeab4c027a ==============================
+[0m23:34:36.264816 [info ] [MainThread]: Running with dbt=1.11.11
+[0m23:34:36.265389 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'warn_error': 'None', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'log_cache_events': 'False', 'use_colors': 'True', 'introspect': 'True', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'no_print': 'None', 'cache_selected_only': 'False', 'debug': 'False', 'profiles_dir': '/home/nicotherev/.dbt', 'log_path': 'logs', 'empty': 'None', 'invocation_command': 'dbt docs generate', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'printer_width': '80', 'indirect_selection': 'eager', 'version_check': 'True', 'static_parser': 'True'}
+[0m23:34:36.265804 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/nicotherev/Proyectos/f1-telemetry-pipeline/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m23:34:36.266505 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": false, "command_wall_clock_time": 0.051674936, "process_in_blocks": "0", "process_kernel_time": 0.181155, "process_mem_max_rss": "103800", "process_out_blocks": "0", "process_user_time": 0.931657}
+[0m23:34:36.266889 [debug] [MainThread]: Command `dbt docs generate` failed at 23:34:36.266808 after 0.05 seconds
+[0m23:34:36.267179 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77cae3fcd8b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77cae4520b90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77cae45bf680>]}
+[0m23:34:36.267524 [debug] [MainThread]: Flushing usage events
+[0m23:34:36.855106 [debug] [MainThread]: An error was encountered while trying to flush usage events

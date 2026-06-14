@@ -1,0 +1,17 @@
+# models/staging/stg_f1.yml
+version: 2
+
+models:
+  - name: stg_sessions
+    description: "Vista limpia y estandarizada de las sesiones de F1 de la temporada 2026."
+    columns:
+      - name: session_id
+        description: "Llave primaria única de la sesión (ej: cada carrera, práctica o clasificación)."
+        tests:
+          - unique   
+          - not_null
+      
+      - name: circuit_id
+        description: "Identificador numérico del circuito."
+        tests:
+          - not_null
